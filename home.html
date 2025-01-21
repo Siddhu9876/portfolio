@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="profile">
+          <img src="./Images/profile.photo.jpeg" alt="profile.photo">
+        </div>
+        <h1>SIDDHARDHA ROY MOGILICHARLA</h1>
+        <p>STUDENT</p>
+      
+      
+      <div class="section-buttons">
+        <button class="section-button" onclick="showSection('about')">About</button>
+        <button class="section-button" onclick="showSection('skills')">Skills</button>
+        <button class="section-button" onclick="showSection('projects')">Projects</button>
+      </div>
+      
+      <!-- Sections -->
+      <div id="about" class="section-content">
+        <h2>About</h2>
+        <p>Hello, I’m Siddhardha Roy Mogilicharla, a computer science student currently pursuing my graduation at Malla Reddy University. 
+          I have a passion for exploring new ideas and turning them into reality, which is one of my key strengths. 
+          Beyond academics, I find joy in playing and following cricket, a sport that motivates me to always give my best both on and off the field. </p>
+      </div>
+      
+      <div id="skills" class="section-content">
+        <h2>Skills</h2>
+
+        <li>
+          <span><img src="./Images/html.png" alt="html" style="width: 20px; height: 20px; border-radius: 50%; margin-top: 5px;"></span>  HTML
+        </li>
+        <li><span><img src="./Images/css.png" alt="html" style="width: 20px; height: 20px; border-radius: 50%; margin-top: 5px;"></span>  CSS
+        </li>
+        <li><span><img src="./Images/js.png" alt="html" style="width: 20px; height: 20px; border-radius: 50%; margin-top: 5px;"></span>  JavaScript
+        </li>
+        <li><span><img src="./Images/react.js" alt="html" style="width: 20px; height: 20px; border-radius: 50%; margin-top: 5px;"></span>  React.js
+        </li>
+        <li><span><img src="./Images/salesforce.jpeg" alt="html" style="width: 20px; height: 20px; border-radius: 50%; margin-top: 5px;"></span>  salesforce
+        </li>
+        <li><span><img src="./Images/python.jpeg" alt="html" style="width: 20px; height: 20px; border-radius: 50%; margin-top: px;"></span>  Python
+        </li>
+      </div>
+      
+      <div id="projects" class="section-content">
+        
+        <div class="container">
+          <h2>PROJECTS</h2>
+          <div class="project-list">
+              <div class="project">
+                  <h3>Project One</h3>
+                  <p>Description </p>
+              </div>
+              <div class="project">
+                  <h3>Project Two</h3>
+                  <p>Description </p>
+              </div>
+          </div>
+      </div>
+      </div>
+      
+      
+    </header><br>
+    <section>
+      <div class="section-buttons">
+        <button class="section-button" onclick="showSection('EXPERIENCE')">EXPERIENCE</button>
+        <button class="section-button" onclick="showSection('CERTIFICATES')">CERTIFICATES</button>
+        <button class="section-button" onclick="showSection('AS')">Projects</button>
+      </div>
+    </section>
+        
+    </section>
+    <a href="https://www.linkedin.com/in/siddhardha-roy-mogilicharla-442784279/" target="_blank">
+      <img src="./Images/linkedIn.png" alt="LinkedIn" style="width: 25px; height: 25px; border-radius: 50%;">
+    </a><br>
+    <a href="https://github.com/Siddhu9876" target="_blank">
+      <img src="./Images/github.png" alt="Github" style="width: 25px; height: 25px; border-radius: 50%;">
+    </a><br>
+    <a href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox" target="_blank">
+      <img src="./Images/gmail.png" alt="Github" style="width: 25px; height: 25px; border-radius: 50%;">
+    </a><br>
+
+    
+    <script>
+        function scrollToSection(sectionId) {
+          const section = document.getElementById(sectionId);
+          section.scrollIntoView({ behavior: 'smooth' });
+        }
+      </script>
+      <Script>
+        function showSection(sectionId) {
+  // Hide all sections
+  const sections = document.querySelectorAll('.section-content');
+  sections.forEach(section => {
+    section.style.display = 'none';
+  });
+
+  // Show the selected section
+  const selectedSection = document.getElementById(sectionId);
+  selectedSection.style.display = 'block';
+}
+
+      </Script>
+      
+
+    
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 SIDDHARDHA ROY MOGILICHARLA.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

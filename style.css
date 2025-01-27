@@ -8,8 +8,8 @@
   
   /* Body Styling */
   body {
-    background-color: #f4f4f9;
-    color: #333;
+    background-color: #080809;
+    color: #0a0505;
     line-height: 1.6;
   }
   
@@ -97,7 +97,7 @@
   /* Projects Section */
   .projects {
     padding: 50px 20px;
-    background: #8080f3;
+    background: #101016;
   }
   
   .projects h2 {
@@ -187,7 +187,7 @@
   }
   
   footer a {
-    color: #4caf50;
+    color: #2969f3;
     text-decoration: none;
   }
   
@@ -226,7 +226,7 @@
   }
   
   .section-button {
-    background: #60a0d1;
+    background: #090909;
     background: #4caf50;
     color: #fff;
     border: none;
@@ -235,7 +235,7 @@
     border-radius: 10px;
     text-transform: uppercase;
     cursor: pointer;
-    transition: background 0.3s ease;
+    transition: background 0.6s ease;
   }
   
   .section-button:hover {
@@ -248,7 +248,7 @@
     padding: 20px;
     background: #f1cfcf;
     margin: 20px auto;
-    max-width: 600px;
+    max-width: 1000px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
   }
@@ -262,17 +262,17 @@
     text-align: center;
     font-size: 1rem;
   }
-  /* Profile Photo Styling */
+  
 .profile {
-  position: absolute; /* Keep it at the top-left */
+  position: absolute; 
   top: 80px;
   left: 10px;
-  width: 150px; /* Size of the photo */
+  width: 150px; 
   height: 150px;
-  border-radius: 50%; /* Make it circular */
-  overflow: hidden; /* Ensure the image stays inside the circle */
-  border: 3px solid #fff; /* Optional: Add a border */
-  box-shadow: 0 4px 6px rgba(167, 21, 21, 0.1); /* Optional: Add a shadow */
+  border-radius: 50%; 
+  overflow: hidden; 
+  border: 3px solid #fff;
+  box-shadow: 0 4px 6px rgba(167, 21, 21, 0.1); 
 }
 
 
@@ -282,14 +282,111 @@
   object-fit: cover; 
 }
 a {
-  color: #4caf50;
+  color: #214bd4;
+  font-family: 'arial';
   text-decoration: none;
   font-weight: bold;
 }
 
 a:hover {
-  color: #45a049;
+  color: #080908;
   text-decoration: underline;
 }
 
-  
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  font-family: 'Arial', sans-serif;
+  font-weight: bold;
+  font-size: 24px;
+  color: #4CAF50;
+  background: linear-gradient(135deg, #f0f0f0, #d9fdd3);
+  padding: 30px;
+  border-radius: 45px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: max-content;
+  margin: 50px auto;
+}
+
+/* Image styling */
+.logo-container img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 2px solid #4CAF50;
+  transition: transform 0.6s ease;
+}
+
+/* Image hover effect */
+.logo-container:hover img {
+  transform: rotate(360deg);
+}
+
+/* Additional text styling */
+.logo-text span {
+  color: #333;
+  font-size: 18px;
+  font-weight: normal;
+  display: block;
+  margin-top: 5px;
+}
+/* Experience Section */
+.experience-section {
+  background-color: #0b0a0a;
+  padding: 40px 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 30px auto;
+  max-width: 800px;
+}
+
+/* Section Title */
+.experience-section h2 {
+  font-size: 28px;
+  text-align: center;
+  margin-bottom: 20px;
+  color: #4CAF50;
+  font-family: 'Arial', sans-serif;
+}
+
+/* Experience Card */
+.experience-card {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  font-family: 'Verdana', sans-serif;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Position Title */
+.experience-card h3 {
+  font-size: 22px;
+  color: #4CAF50;
+  margin-bottom: 5px;
+}
+
+/* Duration */
+.experience-card .duration {
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 15px;
+  font-style: italic;
+}
+
+/* Description and Achievements */
+.experience-card .description,
+.experience-card .achievement {
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+
+.experience-card .achievement {
+  font-weight: bold;
+  color: #555;
+}
+
